@@ -1,0 +1,123 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling:touch
+}
+html{
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+//消除VW布局对img样式影响
+img{
+    content:normal !important;
+}
+*{
+    list-style: none;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+  max-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+  touch-action: manipulation;
+  word-wrap: break-word;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+  user-select: text;
+  -webkit-overflow-scrolling: touch;
+}
+.flx{
+    display:flex;
+}
+.flx-ce-ce{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.flx-ce-sta{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flx-ce-end{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flx-ce-bet{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flx-start{
+    display: flex;
+    align-items: flex-start;
+}
+.flx-clm{
+    display: flex;
+    flex-direction: column;
+}
+.flx-clm-start{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flx-clm-ce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
+.re-after-line{
+    position: relative;
+}
+.re-after-line:after{
+    display: block;
+    width:100%;
+    content: ' ';
+    position: absolute;
+    left:0;
+    bottom:0;
+    border-bottom:1px solid rgba(221,221,221,1);
+    transform: scaleY(0.5);
+}
+.re-before-line{
+    position: relative;
+}
+.re-before-line:after{
+    display: block;
+    width:100%;
+    content: ' ';
+    position: absolute;
+    left:0;
+    top:0;
+    border-bottom:1px solid rgba(221,221,221,1);
+    transform: scaleY(0.5);
+}
+// vux
+
+.weui-cells:before{
+    display: none !important;
+}
+
+.vux-popup-header-right, .weui-dialog__btn_primary {
+  color: #4080ca !important;
+}
+
+.scroller-item {
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+}

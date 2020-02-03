@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter.vue 渲染Counter组件 1`] = `
+<div>
+  0
+</div>
+`;
